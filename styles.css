@@ -1,0 +1,21 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.canvas{
+  display: flex;
+  flex-wrap: wrap;  
+  background-color: rgb(233, 233, 233);
+  border: 5px outset rgb(199, 198, 198);
+  height: 700px;
+  width: 700px;
+}
+.pixel{
+  /* flex-basis: 250px;
+  height: 250px;   */
+  background-color: white;
+  border: 1px solid grey;
+  box-sizing: border-box;  
+}
