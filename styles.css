@@ -1,9 +1,21 @@
 body{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+.buttons{
+  display: flex;
+  gap: 20px;
+}
+#eraser, #reset{
+  font-family: Futura, “Trebuchet MS”, Arial, sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
 .canvas{
   display: flex;
   flex-wrap: wrap;  
