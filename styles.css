@@ -9,7 +9,7 @@ body{
   display: flex;
   gap: 20px;
 }
-#eraser, #reset{
+#eraser, #reset, #changeCanvas{
   font-family: Futura, “Trebuchet MS”, Arial, sans-serif;
   padding: 10px;
   font-size: 20px;

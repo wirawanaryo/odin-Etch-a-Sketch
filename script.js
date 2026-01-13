@@ -1,4 +1,10 @@
-let canvasSize = prompt("How big is the canvas?");
+let canvasSize = prompt("How big is the canvas? (1-100)");
+canvasSize = Number(canvasSize);
+while (canvasSize > 100 || canvasSize < 0 || typeof canvasSize !== 'number' || canvasSize % 1 !== 0) {
+   canvasSize = prompt("Please put a number between 1-100!");
+   canvasSize = Number(canvasSize);
+};
+
 const canvas = document.querySelector(".canvas")
 
 const eraser = document.getElementById("eraser");
@@ -13,6 +19,10 @@ eraser.addEventListener("click", function(){
   }
 });
 
+const changeCanvas = document.getElementById("changeCanvas");
+changeCanvas.addEventListener("click", function(){
+  location.reload();
+});
 
 function createPixel(canvasSize){
   pixelSize = 700/canvasSize
